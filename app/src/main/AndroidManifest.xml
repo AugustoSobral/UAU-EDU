@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uau.android.uau_edu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_circular"
+        android:label="UAU"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start_Login_Register.CompleteCadastroActivity"
+            android:parentActivityName=".Start_Login_Register.RegisterActivity" />
+        <activity android:name=".Start_Login_Register.RegisterActivity"
+            android:parentActivityName=".Start_Login_Register.StartActivity" />
+        <activity android:name=".Start_Login_Register.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".Start_Login_Register.StartActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Start_Login_Register.StartActivity"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="UAU"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>
